@@ -14,7 +14,7 @@ I created a new PDB named od_pdb_28450 using SQL commands.
 
 I also created an administrative user odry_plsqlauca_28450.
 
-The database was successfully created and verified using the SHOW PDBS command.
+The database was successfully created.
 
 Task 2: Create and Delete a PDB
 
@@ -35,6 +35,45 @@ The OEM dashboard screenshot was taken showing the configuration result.
 Overall, the practical helped me understand the creation, deletion, and management of pluggable databases and how to monitor them using OEM Express.
 
 **step 2** screenshots 
+
+
+![Task 1](/image/task1.png)
+
+Screenshot of task 1  showing the creation of the PDB 'od_pdb_28450' and verification using SHOW PDBS.
+The PDB is successfully created and ready for use.
+
+
+![Task 2](/image/Task%202%20.png)
+
+Screenshot showing the creation of the PDB 'od_to_delete_pdb_28450'. and verification using SHOW PDBS
+The PDB is successfully created 
+
+![Task 2 Deletion](/image/Task%202.1.png)
+
+Screenshot showing the deletion of the PDB 'od_to_delete_pdb_28450'.
+
+![Task3](/image/Task3.1.png)
+
+Screenshot of Oracle Enterprise Manager (OEM) dashboard.
+Logged in as SYSTEM user, showing the container database and the PDB 'od_pdb_28450'
+
+
+**issues and how I solved it** 
+
+
+![Error](/image/Error%20Task.png)
+
+Tried to close a PDB that was already in the CLOSED state.
+
+**solution**
+
+Checked the PDB status using SHOW PDBS.  
+Skipped the close step because it was already closed, then dropped the PDB successfully using DROP PLUGGABLE DATABASE.
+
+
+
+
+
 
 
 
